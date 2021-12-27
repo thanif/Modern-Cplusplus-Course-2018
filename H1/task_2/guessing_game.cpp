@@ -5,6 +5,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+
 	srand(time(nullptr)); // use current time as seed for random generator
     int random_number = rand()%100; // generate a random number between 0 and 99
     int guessed_number = 0; // variable to store the guessed number
@@ -27,7 +28,7 @@ int main(int argc, char const *argv[])
 
     	if (guessed_number > random_number)
     	{
-    		cout<< "The generated numbber is smaller."<<endl;
+    		cout<< "The generated number is smaller."<<endl;
     	}
 
     	if (guessed_number < random_number)
